@@ -1,0 +1,9 @@
+<!-- Navigation-->
+
+<nav class="navbar-vertical text-white" *ngIf="isAuthenticated">
+  <a class="navbar-brand" href="#">My App</a>
+  <nav class="nav flex-column">
+    <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    <a class="nav-link" routerLink="/book" routerLinkActive="active">Book</a>
+  </nav>
+</nav>

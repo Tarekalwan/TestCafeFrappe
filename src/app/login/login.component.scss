@@ -1,0 +1,51 @@
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #666;
+  outline: none;
+}
+
+.text-danger {
+  color: #ff0000;
+  font-size: 0.8em;
+}
+
+button {
+  width: 100%;
+  padding: 0.5em;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #555;
+}

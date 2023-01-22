@@ -1,0 +1,15 @@
+<label for="site-search">Find the Book: </label>
+<input type="text" [(ngModel)]="searchTerm" (keyup.enter)="search()">
+  <div *ngIf="errorMessage" class="text-danger">{{ errorMessage }}</div>
+    <table *ngIf="searchResults.length > 0">
+      <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Edition Date</th>
+      </tr>
+      <tr *ngFor="let book of searchResults">
+        <td>{{ book.name }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.publicationDate }}</td>
+      </tr>
+    </table>
